@@ -1,0 +1,249 @@
+{
+	"info": {
+		"_postman_id": "21c73f11-3ea2-4648-b00e-d9571acb15d2",
+		"name": "Python-poc",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get-users",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:5000/users",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add Users",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:5000/users?userId=xyz456&name=The Rock&city=nav",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"users"
+					],
+					"query": [
+						{
+							"key": "userId",
+							"value": "xyz456"
+						},
+						{
+							"key": "name",
+							"value": "The Rock"
+						},
+						{
+							"key": "city",
+							"value": "nav"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "put-users",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:5000/users?userId=xyz456&location=0009",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"users"
+					],
+					"query": [
+						{
+							"key": "userId",
+							"value": "xyz456"
+						},
+						{
+							"key": "location",
+							"value": "0009"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete User",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:5000/users?userId=xyz456",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"users"
+					],
+					"query": [
+						{
+							"key": "userId",
+							"value": "xyz456"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get-locations",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:5000/locations",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"locations"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add-location",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:5000/locations?locationId=8&name=doha&rating=4.0",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"locations"
+					],
+					"query": [
+						{
+							"key": "locationId",
+							"value": "8"
+						},
+						{
+							"key": "name",
+							"value": "doha"
+						},
+						{
+							"key": "rating",
+							"value": "4.0"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Patch-locations",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:5000/locations?locationId=8&name=dubai&rating=4.2",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"locations"
+					],
+					"query": [
+						{
+							"key": "locationId",
+							"value": "8"
+						},
+						{
+							"key": "name",
+							"value": "dubai"
+						},
+						{
+							"key": "rating",
+							"value": "4.2"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete-Location",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:5000/locations?locationId=8",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"locations"
+					],
+					"query": [
+						{
+							"key": "locationId",
+							"value": "8"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
